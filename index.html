@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiCake</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #edb45d;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #edb45d;
+            font-weight: bold;
+        }
+        section {
+            margin: 2rem;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Alinea el texto hacia la izquierda */
+        }
+        h2 {
+            color: #edb45d;
+        }
+        .hidden {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        footer {
+            text-align: center;
+            padding: 0.5rem;
+            background-color: #edb45d;
+            color: rgb(255, 255, 255);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tema: <span id="topicTitle">Panadería y Repostería</span></h1>
+</header>
+
+<nav>
+    <a href="#" onclick="showSection('section1')">Tema 1: Historia</a>
+    <a href="#" onclick="showSection('section2')">Tema 2: Mayores Exponentes</a>
+    <a href="#" onclick="showSection('section3')">Tema 3: Trivia</a>
+</nav>
+
+<section id="section1" class="active">
+    <h2>Historia de la Panadería y Reposteria</h2>
+    <b>Historia de la Panadería.</b>
+    <p>La panadería comenzó hace aproximadamente 12,000 años con el descubrimiento de los cereales <br>
+        y la creación de los primeros productos de pan. Las primeras formas de pan se elaboraban a base <br>
+        de granos silvestres molidos y mezclados con agua, luego se cocían al sol o en piedras calientes.<br>
+    </p>
+    <b>Egipto Antiguo </b>
+    <p>
+        Los egipcios son conocidos por haber perfeccionado el arte de la panadería alrededor del <br>
+        2600 aC . Ellos desarrollaron el fermento natural (levadura), lo que dio lugar a la creación <br>
+        del pan leudado. Además, los egipcios fueron pioneros en el uso de hornos cerrados.<br>
+    </p>
+    <p>
+      <b>Grecia y Roma</b>
+      Los griegos aprendieron de los egipcios y mejoraron la técnica de hacer pan. A lo largo del tiempo, <br>
+      desarrollaron una variedad de panes, algunos con miel y otros con especias. También <br>
+      construyeron los primeros molinos de agua para moler el grano.<br>
+    </p>
+    <p>
+      En la Roma Antigua , la panadería se profesionalizó. Hacia el siglo II a. C, los romanos crearon <br>
+      gremios de panaderos (collegium pistorum), y el pan se convirtió en un alimento básico. Se <br>
+      introdujeron nuevos ingredientes, como la leche y el vino, para darle diferentes sabores al pan. <br>
+    </p>
+    <p>
+      <b>Edad Media</b>
+      Durante la Edad Media, la panadería siguió siendo una parte fundamental de la dieta europea. En <br>
+      este tiempo, se distinguirían entre panes de alta y baja calidad, dependiendo del tipo de harina <br>
+      que se usara. El pan blanco, hecho con harina fina, era un lujo reservado para las clases altas, <br>
+      mientras que el pan negro, hecho de granos más toscos, era el alimento básico de los campesinos. <br>
+        <br>
+      Los monasterios medievales también fueron importantes centros de innovación en panadería, <br>
+      creando panes con frutas secas, especias y azúcares. La panadería pública comenzó a surgir en las <br>
+      ciudades, lo que facilitó que la gente pudiera comprar pan en lugar de hornearlo en casa. <br>
+    </p>
+    <p>
+     <b>Revoluciones Industriales</b>
+      La Revolución Industrial en el siglo XIX trajo grandes avances en la producción de pan. La <br>
+      mecanización permitió moler el grano a gran escala, lo que resultó en un aumento de la <br>
+      producción de pan blanco, que se hizo accesible para las clases medias. También aparecieron los <br>
+      primeros hornos de vapor y sistemas de producción más eficientes. <br>
+          <br>
+      Durante este período, los panaderos comenzaron a usar levadura comercial , lo que permitió un <br>
+      proceso más rápido de fermentación y horneado. <br>
+    </p>
+    <p>
+      <b>Panadería Moderna</b>
+      En el siglo XX, la panadería siguió evolucionando con la invención de nuevas tecnologías como <br>
+      hornos eléctricos, amasadoras automáticas y técnicas de conservación, lo que permitió que el pan <br>
+      se mantuviera fresco por más tiempo. También surgieron productos de panificación industrial, <br>
+      como el pan de molde, que es popular en muchos países hoy en día.<br
+    </p>
+    <h2>Tema 1.5: Historia de la Repostería</h2>
+    <p>Detrás del pastel de chocolate, tarta de manzana o pie de queso se esconde más que una receta,<br>
+        una serie de ingredientes o un proceso arduo de elaboración. Detrás de esa deliciosa preparación <br>
+        se encuentra un recuento de datos y anécdotas que conforman la historia de la repostería.<br>
+    </p>
+    <b>Origen de la Reposteria</b>
+    <p>En su sentido más estricto, podríamos decir que la repostería tiene solo un par de siglos como la <br>
+        disciplina encargada de preparar todo tipo de pasteles; sin embargo, lo cierto es que el origen de <br>
+        la repostería data de hace miles de años. <br>
+    </p>
+    <p>Los primeros antecedentes de la repostería se remontan hace más de 7 mil años en el antiguo <br>
+        Egipto y Mesopotamia. Si nos basamos en su etimología, la palabra pastel deriva de pastelería, que <br>
+        a su vez proviene del vocablo griego pasté, que es como se designaba a la mezcla de harinas con <br>
+        salsas.<br>
+    </p>
+    <b>¿Quién inventó la repostería?</b>
+    <p>
+        Es importante mencionar que la historia de la repostería podría clasificarse en dos vertientes:<br>
+        antigua y moderna. Mientras que la repostería moderna cuenta con diversos registros, nombres y <br>
+        fechas de origen, la repostería antigua es todo lo contrario, pues es imposible determinar un <br>
+        personaje o lugar exacto de origen. <br>
+    </p>
+    <b>La repostería en la Edad Media </b>
+    <P>
+        Durante esta época, la repostería comenzó a tener una estrecha relación con la religión, incluso <br>
+        hasta el grado de convertirse en un conocimiento exclusivo de las autoridades eclesiásticas. <br>
+        Posteriormente, tras el surgimiento de las cruzadas, los europeos tendrían contacto con otro tipo <br>
+        de culturas y productos como el azúcar y diversas pastas. <br>
+    </P>
+    <p>
+        Sin embargo, es hasta 1440 que se comienza a hacer uso de la palabra pasteleros para designar <br>
+        una ordenanza. Bajo el reinado de Carlos IX, en 1556, nace la primera corporación de pasteleros, <br>
+        razón por la cual se considera el primer antecedente de la repostería moderna. <br>
+    </p>
+</section>
+
+<section id="section2" class="hidden">
+    <h2>Tema 2: Mayores Exponentes</h2>
+    <i>"La historia de la repostería es el dulce reflejo de la creatividad humana, heredada de generación en generación"</i><br>
+  <p>
+  <b>Auguste Escoffier (1846-1935)</b>
+      País : Francia. <br>
+    Contribución : Aunque Escoffier es más conocido por sus contribuciones a la cocina francesa en <br>
+    general, también jugó un papel crucial en la repostería. Fue responsable de la creación de <br>
+    postres clásicos como el Melocotón Melba (Pêche Melba) . También programó y estandarizó <br>
+    muchas técnicas y recetas de la repostería, lo que ayudó a definir la alta cocina en el siglo XX. <br>
+  </p>
+  <p>
+    <b>Antoine-Agustín Parmentier (1737-1813)</b>
+      País : Francia. <br>
+    Contribución : Parmentier fue un gran defensor de la papa como alimento básico, <br>
+    especialmente en tiempos de escasez. Aunque es más conocido por esto, también contribuyó al <br>
+    desarrollo de la panadería en Francia al promover mejoras en la calidad del pan y su <br>
+    distribución. Hoy en día, platos como el Hachis Parmentier (similar a un pastel de carne con papas) llevan su nombre. <br>
+  </p>
+</section>
+
+<section id="section3" class="hidden">
+    <h2>Tema 3: Trivia</h2>
+    <p>Finalmente, puedes agregar las conclusiones o reflexiones sobre el tema.</p>
+</section>
+
+<footer>
+    <p>&copy; WikiCake by Saullo Molina #8</p>
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        // Ocultar todas las secciones
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.classList.remove('active');
+            section.classList.add('hidden');
+        });
+
+        // Mostrar la sección seleccionada
+        const selectedSection = document.getElementById(sectionId);
+        selectedSection.classList.remove('hidden');
+        selectedSection.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
